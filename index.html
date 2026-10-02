@@ -1,0 +1,1385 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ethem the Downybrowny ❤️ | Help Ethem</title>
+
+<meta
+    name="description"
+    content="Ethem the Downybrowny — a campaign created to support Ethem and his future."
+>
+
+<style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f8fc;
+    color: #182033;
+    line-height: 1.6;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(255,255,255,.95);
+    backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid #e7e9ef;
+}
+
+.nav {
+    max-width: 1150px;
+    margin: auto;
+
+    padding: 16px 22px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 900;
+    color: #d71920;
+}
+
+.logo span {
+    color: #182033;
+}
+
+nav a {
+    color: #182033;
+    text-decoration: none;
+
+    margin-left: 25px;
+
+    font-weight: 700;
+}
+
+nav a:hover {
+    color: #d71920;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 700px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        radial-gradient(
+            circle at 90% 10%,
+            #ffd9dc,
+            transparent 40%
+        ),
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #fff5f6
+        );
+}
+
+.hero-inner {
+    max-width: 1150px;
+    width: 100%;
+
+    margin: auto;
+    padding: 90px 22px;
+
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.badge {
+    display: inline-block;
+
+    padding: 9px 16px;
+
+    border-radius: 50px;
+
+    background: #fff0f1;
+    border: 1px solid #ffd0d3;
+
+    color: #c9141c;
+
+    font-weight: 800;
+
+    margin-bottom: 22px;
+}
+
+h1 {
+    font-size: clamp(44px, 7vw, 76px);
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 25px;
+}
+
+h1 span {
+    color: #d71920;
+}
+
+.hero-text {
+    max-width: 650px;
+
+    color: #5c6678;
+
+    font-size: 20px;
+
+    margin-bottom: 32px;
+}
+
+/* BUTTONS */
+
+.primary-button {
+    display: inline-block;
+
+    background: #d71920;
+    color: white;
+
+    padding: 17px 28px;
+
+    border-radius: 14px;
+
+    text-decoration: none;
+
+    font-size: 18px;
+    font-weight: 900;
+
+    border: none;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 12px 30px rgba(215,25,32,.22);
+
+    transition: .2s;
+}
+
+.primary-button:hover {
+    transform: translateY(-3px);
+
+    background: #b91219;
+}
+
+.secondary-button {
+    display: inline-block;
+
+    margin-left: 10px;
+
+    padding: 15px 25px;
+
+    border-radius: 14px;
+
+    border: 2px solid #e1e5ec;
+
+    background: white;
+
+    color: #182033;
+
+    text-decoration: none;
+
+    font-weight: 800;
+}
+
+.secondary-button:hover {
+    background: #f5f6f8;
+}
+
+/* =========================
+   CHILD CARD
+========================= */
+
+.child-card {
+    background: white;
+
+    padding: 38px;
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    box-shadow:
+        0 30px 80px rgba(25,35,60,.13);
+}
+
+.child-placeholder {
+    width: 220px;
+    height: 220px;
+
+    margin: 0 auto 25px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 80px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffe1e3,
+            #fff
+        );
+}
+
+.child-card h2 {
+    font-size: 30px;
+
+    margin-bottom: 8px;
+}
+
+.child-card p {
+    color: #697386;
+}
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+section {
+    padding: 90px 22px;
+}
+
+.container {
+    max-width: 1050px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 42px;
+
+    margin-bottom: 12px;
+}
+
+.section-title p {
+    max-width: 700px;
+
+    margin: auto;
+
+    color: #687386;
+
+    font-size: 18px;
+}
+
+/* =========================
+   STORY
+========================= */
+
+.story {
+    background: white;
+}
+
+.story-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+}
+
+.info-card {
+    padding: 32px;
+
+    border-radius: 22px;
+
+    background: #f7f8fb;
+
+    border: 1px solid #e5e8ef;
+}
+
+.info-card h3 {
+    font-size: 25px;
+
+    margin-bottom: 12px;
+}
+
+.info-card p {
+    color: #606a7c;
+}
+
+/* =========================
+   DONATION
+========================= */
+
+.donate-section {
+    background:
+        linear-gradient(
+            135deg,
+            #fff1f2,
+            #ffffff
+        );
+}
+
+.donation-box {
+    max-width: 760px;
+
+    margin: auto;
+
+    padding: 40px;
+
+    border-radius: 28px;
+
+    background: white;
+
+    box-shadow:
+        0 25px 70px rgba(30,40,70,.10);
+}
+
+.progress-info {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+
+    font-weight: 800;
+}
+
+.progress {
+    height: 18px;
+
+    background: #e8ebf1;
+
+    border-radius: 50px;
+
+    overflow: hidden;
+
+    margin-bottom: 30px;
+}
+
+.progress-bar {
+    width: 38%;
+
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #d71920,
+            #f05258
+        );
+
+    border-radius: 50px;
+}
+
+/* AMOUNTS */
+
+.amounts {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+
+    margin-bottom: 18px;
+}
+
+.amount {
+    padding: 15px;
+
+    border: 2px solid #e2e6ed;
+
+    background: white;
+
+    border-radius: 12px;
+
+    font-size: 17px;
+
+    font-weight: 900;
+
+    cursor: pointer;
+
+    transition: .15s;
+}
+
+.amount:hover,
+.amount.active {
+    border-color: #d71920;
+
+    background: #fff1f2;
+
+    color: #d71920;
+}
+
+.custom-amount {
+    width: 100%;
+
+    padding: 16px;
+
+    margin-bottom: 18px;
+
+    border: 2px solid #e2e6ed;
+
+    border-radius: 12px;
+
+    font-size: 17px;
+
+    outline: none;
+}
+
+.custom-amount:focus {
+    border-color: #d71920;
+}
+
+.secure {
+    text-align: center;
+
+    margin-top: 17px;
+
+    font-size: 14px;
+
+    color: #697386;
+}
+
+/* =========================
+   IMPACT
+========================= */
+
+.impact-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.impact {
+    background: white;
+
+    border: 1px solid #e5e8ee;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+}
+
+.impact-icon {
+    font-size: 42px;
+
+    margin-bottom: 12px;
+}
+
+.impact h3 {
+    margin-bottom: 8px;
+}
+
+.impact p {
+    color: #697386;
+}
+
+/* =========================
+   TRANSPARENCY
+========================= */
+
+.trust {
+    background: #172033;
+
+    color: white;
+}
+
+.trust .section-title p {
+    color: #c7cedb;
+}
+
+.trust-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.trust-card {
+    padding: 27px;
+
+    border-radius: 18px;
+
+    background: #202a3e;
+
+    border: 1px solid #394358;
+}
+
+.trust-card h3 {
+    margin-bottom: 9px;
+}
+
+.trust-card p {
+    color: #c5ccda;
+
+    font-size: 15px;
+}
+
+/* =========================
+   FAQ
+========================= */
+
+.faq {
+    background: white;
+}
+
+details {
+    max-width: 800px;
+
+    margin: 12px auto;
+
+    padding: 20px 22px;
+
+    background: #f7f8fa;
+
+    border-radius: 14px;
+
+    border: 1px solid #e4e7ed;
+}
+
+summary {
+    cursor: pointer;
+
+    font-weight: 800;
+}
+
+details p {
+    margin-top: 12px;
+
+    color: #606a7c;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #0e1420;
+
+    color: #aeb6c5;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+footer strong {
+    color: white;
+}
+
+.footer-title {
+    font-size: 20px;
+
+    margin-bottom: 8px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width: 800px) {
+
+    nav {
+        display: none;
+    }
+
+    .hero-inner {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        padding-top: 65px;
+    }
+
+    .hero-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .secondary-button {
+        margin-left: 0;
+
+        margin-top: 12px;
+    }
+
+    .story-grid,
+    .impact-grid,
+    .trust-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .amounts {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .donation-box {
+        padding: 25px;
+    }
+
+    .section-title h2 {
+        font-size: 34px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+    <div class="nav">
+
+        <div class="logo">
+            ❤️ Ethem <span>the Downybrowny</span>
+        </div>
+
+        <nav>
+            <a href="#story">Ethem's Story</a>
+            <a href="#impact">Impact</a>
+            <a href="#donate">Donate</a>
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+    <div class="hero-inner">
+
+        <div>
+
+            <div class="badge">
+                🇹🇷 Ethem the Downybrowny
+            </div>
+
+            <h1>
+                Help <span>Ethem</span><br>
+                build a brighter future.
+            </h1>
+
+            <p class="hero-text">
+
+                Ethem the Downybrowny is a campaign created
+                to support Ethem, a child from Turkey living
+                with autism and Down syndrome.
+
+                Every contribution can help provide support,
+                care, education and opportunities for his future.
+
+            </p>
+
+
+            <a
+                href="#donate"
+                class="primary-button"
+            >
+                ❤️ Donate Now
+            </a>
+
+
+            <a
+                href="#story"
+                class="secondary-button"
+            >
+                Learn More
+            </a>
+
+        </div>
+
+
+        <div class="child-card">
+
+            <!--
+                Add a photo here only if Ethem's
+                parent/guardian has given permission.
+            -->
+
+            <div class="child-placeholder">
+                ❤️
+            </div>
+
+            <h2>
+                Ethem
+            </h2>
+
+            <p>
+                Ethem the Downybrowny
+            </p>
+
+            <p style="margin-top:8px;">
+                🇹🇷 Turkey
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     STORY
+========================= -->
+
+<section
+    id="story"
+    class="story"
+>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Ethem's Story
+            </h2>
+
+            <p>
+                Learn more about the reason behind
+                the Ethem the Downybrowny campaign.
+            </p>
+
+        </div>
+
+
+        <div class="story-grid">
+
+
+            <div class="info-card">
+
+                <h3>
+                    ❤️ About Ethem
+                </h3>
+
+                <p>
+
+                    Ethem is a child from Turkey who
+                    lives with autism and Down syndrome.
+
+                    Like every child, he deserves
+                    opportunities to learn, grow,
+                    participate and enjoy life.
+
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <h3>
+                    🌱 Why We Are Fundraising
+                </h3>
+
+                <p>
+
+                    The Ethem the Downybrowny campaign
+                    aims to provide financial support
+                    for Ethem's care, education,
+                    accessibility and everyday needs.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     DONATION
+========================= -->
+
+<section
+    id="donate"
+    class="donate-section"
+>
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <h2>
+                Support Ethem
+            </h2>
+
+            <p>
+
+                Your contribution can help support
+                Ethem and his future.
+
+            </p>
+
+        </div>
+
+
+        <div class="donation-box">
+
+
+            <!-- CAMPAIGN PROGRESS -->
+
+            <div class="progress-info">
+
+                <span>
+                    Campaign progress
+                </span>
+
+                <span>
+                    €3,800 / €10,000
+                </span>
+
+            </div>
+
+
+            <div class="progress">
+
+                <div
+                    class="progress-bar"
+                ></div>
+
+            </div>
+
+
+            <!-- DONATION AMOUNTS -->
+
+            <div class="amounts">
+
+
+                <button
+                    class="amount"
+                    onclick="selectAmount(10, this)"
+                >
+                    €10
+                </button>
+
+
+                <button
+                    class="amount"
+                    onclick="selectAmount(25, this)"
+                >
+                    €25
+                </button>
+
+
+                <button
+                    class="amount"
+                    onclick="selectAmount(50, this)"
+                >
+                    €50
+                </button>
+
+
+                <button
+                    class="amount"
+                    onclick="selectAmount(100, this)"
+                >
+                    €100
+                </button>
+
+
+            </div>
+
+
+            <input
+                id="customAmount"
+                class="custom-amount"
+                type="number"
+                min="1"
+                step="1"
+                placeholder="Enter another amount (€)"
+            >
+
+
+            <!--
+                ==================================================
+                REAL DONATION LINK
+                ==================================================
+
+                REPLACE THE URL BELOW WITH THE VERIFIED
+                PAYMENT LINK FOR THE CAMPAIGN.
+
+                Example:
+
+                https://buy.stripe.com/xxxxxxxxxxxx
+
+                Do NOT put secret API keys here.
+
+                The responsible adult/organization should
+                create and control the payment account.
+            -->
+
+
+            <a
+                id="donateButton"
+                class="primary-button"
+                href="https://example.com/REPLACE-WITH-REAL-DONATION-LINK"
+                target="_blank"
+                rel="noopener noreferrer"
+                style="
+                    width:100%;
+                    text-align:center;
+                "
+            >
+
+                ❤️ Donate to Ethem
+
+            </a>
+
+
+            <div class="secure">
+
+                🔒 Secure payment handled by the
+                campaign's payment provider.
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     IMPACT
+========================= -->
+
+<section id="impact">
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <h2>
+                How Support Can Help
+            </h2>
+
+            <p>
+
+                The campaign organizer should use
+                donations transparently for Ethem's
+                needs.
+
+            </p>
+
+        </div>
+
+
+        <div class="impact-grid">
+
+
+            <div class="impact">
+
+                <div class="impact-icon">
+                    🧑‍⚕️
+                </div>
+
+                <h3>
+                    Care & Support
+                </h3>
+
+                <p>
+
+                    Help with appropriate professional
+                    and everyday support.
+
+                </p>
+
+            </div>
+
+
+            <div class="impact">
+
+                <div class="impact-icon">
+                    📚
+                </div>
+
+                <h3>
+                    Education
+                </h3>
+
+                <p>
+
+                    Help provide educational resources
+                    and learning opportunities.
+
+                </p>
+
+            </div>
+
+
+            <div class="impact">
+
+                <div class="impact-icon">
+                    🌱
+                </div>
+
+                <h3>
+                    Future Opportunities
+                </h3>
+
+                <p>
+
+                    Support opportunities for Ethem
+                    to participate, learn and grow.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     TRANSPARENCY
+========================= -->
+
+<section class="trust">
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <h2>
+                Transparency Matters
+            </h2>
+
+            <p>
+
+                Donors should always be able to understand
+                who runs the campaign and how donations
+                are used.
+
+            </p>
+
+        </div>
+
+
+        <div class="trust-grid">
+
+
+            <div class="trust-card">
+
+                <h3>
+                    🔒 Secure Payments
+                </h3>
+
+                <p>
+
+                    Donations should be processed through
+                    a reputable payment provider instead
+                    of storing card information on this website.
+
+                </p>
+
+            </div>
+
+
+            <div class="trust-card">
+
+                <h3>
+                    👨‍👩‍👦 Responsible Adult
+                </h3>
+
+                <p>
+
+                    The payment account should be controlled
+                    by Ethem's parent, guardian or legitimate
+                    organization responsible for the campaign.
+
+                </p>
+
+            </div>
+
+
+            <div class="trust-card">
+
+                <h3>
+                    📋 Clear Purpose
+                </h3>
+
+                <p>
+
+                    The campaign organizer should clearly
+                    explain how donations are received and
+                    how the money is used.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FAQ
+========================= -->
+
+<section class="faq">
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <h2>
+                Frequently Asked Questions
+            </h2>
+
+        </div>
+
+
+        <details>
+
+            <summary>
+                Who is Ethem the Downybrowny?
+            </summary>
+
+            <p>
+
+                Ethem the Downybrowny is the name of this
+                campaign supporting Ethem, a child from Turkey
+                who lives with autism and Down syndrome.
+
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                Where does my donation go?
+            </summary>
+
+            <p>
+
+                Donations should go to the verified payment
+                account controlled by the responsible adult
+                or organization running the campaign.
+
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                Is my card information stored here?
+            </summary>
+
+            <p>
+
+                No. The recommended setup sends donors to
+                an external payment provider. Never put
+                payment card information or secret API keys
+                directly into this HTML file.
+
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                Can I donate a different amount?
+            </summary>
+
+            <p>
+
+                The campaign's payment provider can be
+                configured to allow donors to choose a
+                custom donation amount.
+
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                How can I verify the campaign?
+            </summary>
+
+            <p>
+
+                Before donating, verify the identity of the
+                campaign organizer, their relationship to Ethem,
+                and how the funds will be used.
+
+            </p>
+
+        </details>
+
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="footer-title">
+        ❤️ <strong>Ethem the Downybrowny</strong>
+    </div>
+
+    <p>
+        Supporting Ethem and his future.
+    </p>
+
+    <p style="margin-top:12px;font-size:13px;">
+
+        Please donate only through the verified
+        payment method provided by the campaign organizer.
+
+    </p>
+
+</footer>
+
+
+<script>
+
+/*
+==================================================
+DONATION AMOUNT SELECTION
+==================================================
+*/
+
+let selectedAmount = null;
+
+
+function selectAmount(amount, button) {
+
+    selectedAmount = amount;
+
+    document.getElementById(
+        "customAmount"
+    ).value = amount;
+
+
+    document
+        .querySelectorAll(".amount")
+        .forEach(function(btn) {
+
+            btn.classList.remove("active");
+
+        });
+
+
+    button.classList.add("active");
+
+}
+
+
+/*
+==================================================
+CUSTOM AMOUNT
+==================================================
+*/
+
+document
+    .getElementById("customAmount")
+    .addEventListener("input", function() {
+
+        selectedAmount = this.value;
+
+        document
+            .querySelectorAll(".amount")
+            .forEach(function(btn) {
+
+                btn.classList.remove("active");
+
+            });
+
+    });
+
+</script>
+
+
+</body>
+</html>
+```
